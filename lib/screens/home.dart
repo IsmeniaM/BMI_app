@@ -2,6 +2,7 @@ import 'package:bmi_calculater_app/constants/app_constants.dart';
 import 'package:bmi_calculater_app/widgets/left_bar.dart';
 import 'package:bmi_calculater_app/widgets/right_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:restart_app/restart_app.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -115,6 +116,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   style: TextStyle(fontSize: 90, color: accentHexColor),
                 ),
               ),
+
               SizedBox(
                 height: 30,
               ),
@@ -129,6 +131,28 @@ class _HomeScreenState extends State<HomeScreen> {
                           color: accentHexColor),
                     ),
                   )),
+
+              Container(
+                width: double.infinity,
+                padding: const EdgeInsets.only(left: 16, right: 16),
+                child: FlatButton.icon(
+                  onPressed: () {
+                    Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute
+                    (builder: (BuildContext context) => super.widget));
+
+                  },
+                  icon: const Icon(Icons.refresh, color: Colors.white,),
+                  label: Text("CALCULATE AGAIN"),
+                  textColor: Colors.black,
+                  color: Colors.yellow,
+
+                ),
+              ),
+
+
+
               SizedBox(
                 height: 10,
               ),
