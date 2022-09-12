@@ -2,7 +2,7 @@ import 'package:bmi_calculater_app/constants/app_constants.dart';
 import 'package:bmi_calculater_app/widgets/left_bar.dart';
 import 'package:bmi_calculater_app/widgets/right_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:restart_app/restart_app.dart';
+
 
 class HomeScreen extends StatefulWidget {
   @override
